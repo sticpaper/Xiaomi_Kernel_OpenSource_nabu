@@ -2251,6 +2251,10 @@ static int disable_pen_input_device(bool disable) {
 	ts->pen_is_charge ? "ENABLE" : "DISABLE",
 	disable ? "DISABLE" : "ENABLE");
 
+#ifdef CONFIG_TOUCHSCREEN_NEW_PEN_CONNECT_STRATEGY
+	update_pen_connect_strategy_value(!disable);
+#endif //CONFIG_TOUCHSCREEN_NEW_PEN_CONNECT_STRATEGY
+
 nvt_set_pen_enable_out:
 	NVT_LOG("--\n");
 	return ret;
