@@ -24,6 +24,7 @@ fw-shipped-$(CONFIG_INPUT_PRESS_NDT) += ndt_fw.bin
 fw-shipped-$(CONFIG_TOUCHSCREEN_NT36523_HOSTDL_SPI) += novatek_ts_fw.bin novatek_ts_mp.bin
 fw-shipped-$(CONFIG_TOUCHSCREEN_NT36523_HOSTDL_SPI) += novatek_nt36523_k82_fw01.bin novatek_nt36523_k82_mp01.bin
 fw-shipped-$(CONFIG_TOUCHSCREEN_NT36523_HOSTDL_SPI) += novatek_nt36523_k82_fw02.bin novatek_nt36523_k82_mp02.bin
+fw-shipped-$(CONFIG_TOUCHSCREEN_NT36523_HOSTDL_SPI) += novatek_nt36523_k82_fw01_pen.bin novatek_nt36523_k82_mp01_pen.bin
 
 fw-shipped-all := $(fw-shipped-y) $(fw-shipped-m) $(fw-shipped-)
 
